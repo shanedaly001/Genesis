@@ -1,0 +1,69 @@
+/* Genesis Simple Share
+--------------------------------------------- */
+
+/* Centers the icons */
+.share-before, .share-after {
+    overflow: auto;
+    text-align: center;
+}
+
+.sharrre {
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Genericons';  
+    speak: none;
+    font-size: 1em;
+    width: 2em;
+    text-align: center;
+    line-height: 1.8em;
+    margin: 0 .2em 1em .2em;
+    color: #666;
+    border: 2px solid #666;
+    border-radius: 50%;
+}
+ 
+.sharrre .count, .sharrre .share {
+    display: none;
+}
+
+/* styling filled icons */
+.share-filled .sharrre {
+    background: #666;
+    border: none;
+    color: #fff;
+    width: 1.8em;
+}
+
+/* size medium size icons */
+.share-medium .sharrre {
+    font-size: 1.5em;
+}
+
+.sharrre:hover {
+    background: #0fbe7c;
+    color: #fff;
+}
+
+.facebook:before {
+    content: '\f204';
+}
+
+.pinterest:before {
+    content: '\f209';
+}
+
+.twitter:before {
+    content: '\f202';
+}
+
+.stumbleupon:before {
+    content: '\f223';
+}
+
+.linkedin:before {
+    content: '\f207';
+}
+
+.googlePlus:before {
+    content: '\f218';
+}

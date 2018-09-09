@@ -17,3 +17,5 @@ In this instance the class name will be share-box
 
 To position the icons in multiple places, you would create multiple functions with different hooks for each position.
 One caveat is that the argument passed into genesis_share_icon_output for the CSS class name has to be unique.
+
+For custom post types positioning just create the same type of function/action with a unique name and declare the CPT name in the if statement replacing post.

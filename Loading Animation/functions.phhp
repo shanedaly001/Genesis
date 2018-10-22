@@ -1,0 +1,10 @@
+add_action( 'genesis_before', 'sdd_add_loadingAnimation', 1 );
+function sdd_add_loadingAnimation() {
+    if(is_front_page() ) {
+	echo '<div class="loadingAnimation"></div>';
+}}
+
+add_action( 'wp_enqueue_scripts', 'sdd_enqueue_loadingAnimation_script' );
+function sdd_enqueue_loadingAnimation_script() {
+	wp_enqueue_script( 'loading-animation-init', get_stylesheet_directory_uri() . '/js/loading-animation-init.js', array( 'jquery' ), CHILD_THEME_VERSION );
+}
